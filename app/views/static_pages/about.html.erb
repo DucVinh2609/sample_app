@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% provide(:title, "About") %>
 <h1>About</h1>
 <p>
@@ -9,3 +10,11 @@
   <a href="http://rubyonrails.org/">Ruby on Rails</a>.
   This is the sample application for the tutorial.
 </p>
+=======
+<% provide :title, t(".title") %>
+<h1><%= t ".title" %></h1>
+<p>
+  <%= t ".about_html", main_href: link_to(t("tutorial"), t("url.main_page")) \
+    , book_href: link_to(t("book"), t("url.book_page")) %>
+</p>
+>>>>>>> chapter_4

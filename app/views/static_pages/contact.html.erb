@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 <% provide(:title, "Contact") %>
 <h1>Contact</h1>
 <p>
   Contact the Ruby on Rails Tutorial about the sample app at the
   <a href="https://www.railstutorial.org/contact">contact page</a>.
+=======
+<% provide :title, t(".title") %>
+<h1><%= t ".title" %></h1>
+<p>
+  <%= t ".para1_html", href: link_to(t(".contact_page"), t("url.contact_page")) %>
+>>>>>>> chapter_4
 </p>
